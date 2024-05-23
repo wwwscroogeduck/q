@@ -1,0 +1,273 @@
+/* Сброс стилей и базовые стили */
+:root {
+  --font-family-default: 'Montserrat', sans-serif;
+  --font-family-secondary: 'Poppins', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  height: auto; /* Убедитесь, что высота не фиксирована */
+  overflow-y: auto; /* Разрешить прокрутку по вертикали */
+  margin: 0; /* Убрать отступы */
+  padding: 0; /* Убрать внутренние отступы */
+}
+
+.text{
+  flex-direction: column;
+}
+
+
+.welcome-section{
+  display: flex;
+  flex-direction:row;
+  justify-content:space-between;
+  position: relative;
+  align-items: center;
+  height: auto;
+  padding-bottom: 20px;
+  margin-top: 40px;
+  background-color: #caddc9;
+  right: 0;
+  width: 100%;
+}
+
+.welcome-section h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #000;
+  text-align: left;
+}
+
+.welcome-section p {
+  font-size: 28px;
+  font-weight: 400;
+  color: #000;
+  text-align: left;
+}
+
+.welcome-section button {
+  padding: 17px 65px;
+  background: linear-gradient(90deg, #d4fc79, #96e6a1);
+  border: 1px solid #fff;
+  border-radius: 40px;
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  font-size: 28px;
+  color: #000;
+}
+
+.map{
+  margin: auto;
+}
+
+
+
+.map-title{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.map-section{
+  padding-top: 40px;
+}
+
+.navigation-menu {
+  list-style: none;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.nav-item {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-link {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 2s ease;
+}
+
+.nav-link:hover {
+  border-radius: 10px;
+  background: #F5FFDA;
+  color: #000000;
+}
+
+/* Стили для выпадающего списка */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.zxc{
+margin-left: 40px;
+font-size: 24px;
+}
+
+.dropdown-link {
+  display: block;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+  background: transparent;
+  transition: background 0.3s ease;
+}
+
+.dropdown-link:hover {
+  background: rgba(242, 242, 242, 0.8);
+}
+
+/* Отображение выпадающего списка при наведении */
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+
+/* .decore {
+  position: absolute;
+  width: 782px;
+  height: 890px;
+  top: -217px;
+  left: -91px;
+  background: url(/figure1.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 0;
+} */
+
+
+/* .decore-1 {
+  position: absolute;
+  width: 902.019px;
+  height: 993.34px;
+  top: -126px;
+  left: 1193px;
+  background: url(/figure2.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: -1;
+} */
+
+
+.span-go-to-map {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 34px;
+  color: #000000;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 65;
+}
+
+
+.map-title{
+  display: flex;
+  position:absolute;
+  width: 679px;
+  height: 118px;
+  top: 286px;
+  color: #000000;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 48px;
+  font-weight: 700;
+}
+
+
+
+/* 
+
+.image {
+  position: absolute;
+  width: 964px;
+  height: 671px;
+  top: 148px;
+  left: 149px;
+  background: url(/map1.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 58;
+  border-radius: 40px;
+} */
+
+
+.rectangle-2 {
+  position: relative;
+  width: 785px;
+  height: 84px;
+  top: 24px;
+  left: 50%;
+  background: rgba(149, 149, 149, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  transform: translate(-50%, 0);
+  z-index: 59;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0; /* Удалить внутренние отступы */
+}
+
+.rectangle-2 nav {
+  width: 100%; /* Ширина на всю доступную область */
+}
+
+.rectangle-2 ul {
+  display: flex; /* Используйте flexbox для выравнивания элементов */
+  justify-content: space-around; /* Равномерное распределение с отступами вокруг */
+  width: 100%; /* Ширина на всю доступную область */
+  padding: 0; /* Убрать внутренние отступы */
+  margin: 0; /* Убрать внешние отступы */
+  list-style: none; /* Убрать маркеры списка */
+}
+
+.rectangle-2 li {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 27.564px;
+  text-align: left;
+  white-space: nowrap;
+  text-align: center; /* Центрирование текста */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-default);
+  background: #caddc9;
+  overflow: hidden;
+}
+
